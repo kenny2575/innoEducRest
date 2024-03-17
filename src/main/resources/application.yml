@@ -1,0 +1,15 @@
+spring:
+  application.name: corporate_settlement_service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: "GodOmen"
+    password: "GodOmen"
+    url: jdbc:postgresql://localhost:5432/Study_DB
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      pool-name: collection-pool

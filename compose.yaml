@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=Study_DB'
+      - 'POSTGRES_PASSWORD=GodOmen'
+      - 'POSTGRES_USER=GodOmen'
+    ports:
+      - '5432'
+  app:
+    build: ./
+    container_name: 'java-app'
+    ports:
+      - 8080:8080
